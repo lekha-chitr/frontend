@@ -1,20 +1,7 @@
 import React, { Component } from 'react';
 
-interface Props {
-  _id: string;
-}
-interface State {
-  id: string;
-}
-export default class extends Component<Props> {
-  state: State = {
-    id: 'Hello'
-  };
+export default class extends Component {
   render() {
-    return (
-      <div>
-        <h1>{this.props._id}</h1>
-      </div>
-    );
+    return <div>Sample</div>;
   }
 }
