@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import Root from './home/index';
+import Home from './home';
 import './styles/global.css';
-ReactDOM.render(<Root />, document.getElementById('root'));
+ReactDOM.render(<Home />, document.getElementById('root'));
 
 // ServiceWorker
 process.env.NODE_ENV === 'production'
