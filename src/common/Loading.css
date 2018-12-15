@@ -1,0 +1,23 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-1);
+  background: #fafafa;
+}
+
+.main-tag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+blockquote {
+  font-size: 2rem;
+}
+footer {
+  font-size: 1.2rem;
+}
