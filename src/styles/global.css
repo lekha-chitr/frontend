@@ -1,1 +1,39 @@
-@import './normalize.css';
+/* @import './normalize.css'; */
+body {
+  margin: 0;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.h-1 {
+  min-height: 80vh;
+  justify-items: flex-end;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .flex-column {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .h-1 {
+    min-height: 60vh;
+  }
+}
+.img-res {
+  width: 100%;
+}
+
+.main-heading-1 {
+  font-size: 4.2rem;
+}
+.main-heading-2 {
+  font-size: 1.25rem;
+}

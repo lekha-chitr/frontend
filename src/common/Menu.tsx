@@ -8,6 +8,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import Header from './Header';
 
 const styles = {
   list: {
@@ -19,19 +20,20 @@ const styles = {
 };
 
 export interface IProps {
-  classes: any;
-  open: boolean;
+  classes?: any;
+  open?: boolean;
 }
 
 class Menu extends React.Component<IProps, {}> {
   state = {
-    open: this.props.open
+    open: false
   };
 
   toggleDrawer = (state: boolean) => () => {
     this.setState({
       open: state
     });
+    console.log('asdlkf');
   };
 
   render() {
@@ -65,6 +67,7 @@ class Menu extends React.Component<IProps, {}> {
 
     return (
       <div>
+        <Header toggle={this.toggleDrawer} />
         <SwipeableDrawer
           open={this.state.open}
           onClose={this.toggleDrawer(false)}
