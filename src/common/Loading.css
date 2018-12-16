@@ -1,22 +1,27 @@
 .container {
-  height: 100vh;
-  width: 100vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: var(--font-1);
-  background: #fafafa;
+  background: #000;
 }
 
 .main-tag {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: white;
   align-items: center;
 }
 
 blockquote {
   font-size: 2rem;
+  text-align: center;
+  text-justify: auto;
 }
 footer {
   font-size: 1.2rem;

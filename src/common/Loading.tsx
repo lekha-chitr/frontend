@@ -1,21 +1,24 @@
 import * as React from 'react';
 import './Loading.css';
-import LoadingGif from './loading.gif';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import { withStyles } from '@material-ui/core/styles';
+
+const styles = (theme: any) => ({
+  progress: {
+    margin: theme.spacing.unit * 2
+  }
+});
 
 const Loader = () => (
   <div className="container">
-    <div className="inner-container">
-      <div className="loading-qoutes">
-        <div className="main-tag">
-          <blockquote>
-            “Information is not knowledge.”
-            <footer>― Albert Einstein</footer>
-          </blockquote>
-          <img src={LoadingGif} height="40" width="40" />
-        </div>
-      </div>
+    <div className="main-tag">
+      <blockquote>
+        “Information is not knowledge.”
+        <footer>― Albert Einstein</footer>
+      </blockquote>
+      <CircularProgress color="inherit" />
     </div>
   </div>
 );
 
-export default Loader;
+export default withStyles(styles)(Loader);
