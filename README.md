@@ -1,10 +1,15 @@
 ## LEKHA CHITRA FrontEnd
-<hr>
+
 
 [![Build Status](https://travis-ci.org/lekha-chitr/frontend.svg?branch=master)](https://travis-ci.org/lekha-chitr/frontend)
 
-:construction_worker_man: **Front End Website for Lekha chit currently under development**
+**Front End Website for Lekha chitra currently under development :construction_worker_man: **
 
-## Getting Involved
-<hr>
+## Todo
 
+  - Completing the front-end 
+  - making visualization from the core data
+  
+## Contribution
+
+:heavy_check_mark:
