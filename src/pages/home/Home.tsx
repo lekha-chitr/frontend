@@ -1,15 +1,18 @@
 import * as React from 'react';
 import Grid from '@material-ui/core/Grid';
-import Menu from '../common/Menu';
 import HomeIll from './ill_1.svg';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
+import Menu from '../../common/Menu';
+
 class Main extends React.Component {
   render() {
+    const ExploreLink = (props: any) => <Link to="/explore" {...props} />;
     return (
       <React.Fragment>
         <Menu />
-        <Grid container style={{ padding: 20 }}>
+        <Grid container style={{ padding: 50, paddingTop: 64 }}>
           <Grid className="flex h-1" item xs={12} sm={6}>
             <div className="flex flex-column">
               <Typography
@@ -37,7 +40,12 @@ class Main extends React.Component {
                 aperiam. Aperiam aliquid qui repudiandae ducimus blanditiis
                 voluptas id alias earum, unde error impedit?
               </Typography>
-              <Button variant="outlined" color="default">
+              <Button
+                variant="contained"
+                size="large"
+                component={ExploreLink}
+                color="primary"
+              >
                 Explore
               </Button>
             </div>

@@ -3,9 +3,10 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import { Link } from 'react-router-dom';
+import { Button } from '@material-ui/core';
 
 const styles = {
   root: {
@@ -35,9 +36,10 @@ class Header extends React.Component<IProps, IState> {
 
   render() {
     const { classes, toggle } = this.props;
+    const Explorelink = (props: any) => <Link to="/explore" {...props} />;
     return (
       <div className={classes.root}>
-        <AppBar position="static" color="inherit">
+        <AppBar position="fixed" color="inherit">
           <Toolbar>
             <IconButton
               className={classes.menuButton}
@@ -48,9 +50,11 @@ class Header extends React.Component<IProps, IState> {
               <MenuIcon />
             </IconButton>
             <Typography variant="h5" color="inherit" className={classes.grow}>
-              Lekha Chitra
+              <Link to="/">Lekha Chitra</Link>
             </Typography>
-            <Button color="inherit">Explore</Button>
+            <Button color="primary" variant="contained" component={Explorelink}>
+              Explore
+            </Button>
           </Toolbar>
         </AppBar>
       </div>

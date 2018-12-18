@@ -37,3 +37,12 @@ body {
 .main-heading-2 {
   font-size: 1.25rem;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bigg {
+  height: 200vh;
+}
