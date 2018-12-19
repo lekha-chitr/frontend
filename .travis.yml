@@ -15,6 +15,8 @@ deploy:
   provider: heroku
   api_key:
     secure: ZoHza5WGdj4O9m5bAnR7eOgY/xTpZcp9MAyzDu4GSakjxC1Eeoa/I5C4s7RxwavEhMOlUKlHWjQY2ybRgk063u5t/S95gr0ySy6hGYUH91fvOkCTU6zRfY4wXJPgxh64R4rlwuNG+J1c/RogJvwKevXZg9hLlyJyINUZlcWj3Ji85to4Z1EKi/WHcwXVhfMOwOrYDCqIs4Y+VWc+V1T/0b6j8dt99op/zJB8ddqj/4QXQDlOdmQQzdS8/ZGBf5ATgn3sfEWlVVmkfqsaFdG5RmMShRSwdMzgZxAkldVBtALgNukX+PWbHatfMAyzSV/wUYoN0XP3Y8PGa+5BOURKOREaNyaVmqWt8Xqms/xRb9Zn4I+U93UWuOdJzTDAyTQuoaKvKCQl3GIlF7l0JaJ+s9OfLEz4wfe9KbUpdls88gP32d8DEC/OKafGQ9FjI56zvjcqEjG2patYRMsyLZbA3bTyqhjNXwK59uSRQK4KWI99peHpRIc/KyTsJfhd6QLduwqY6Yqsp+mfSM42hobfx7+356h2+sg328V+cof291ZlTyYQIGz1b6m5AUmeYT3UoAE27O75C6GryE6YZgJEt2LHA2j1S1Ni1IwGaXEeh+25Ya/7I+rSKh7cpFg7N/Khz84jr2Mbw0dRk5IDA/+vtBWnuDiR1Jgb1PW7Y8sPdH8=
-  app: lekha-chitra
+  app: 
+    master: lekha-chitra
+    dev: lekha-chitra-dev
   on:
     repo: lekha-chitr/frontend
