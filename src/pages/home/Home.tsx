@@ -12,20 +12,19 @@ class Main extends React.Component {
     return (
       <React.Fragment>
         <Menu />
-        <Grid container style={{ padding: 50, paddingTop: 64 }}>
+        <Grid container className="padding" style={{ paddingTop: 64 }}>
           <Grid className="flex h-1" item xs={12} sm={6}>
             <div className="flex flex-column">
               <Typography
                 variant="h2"
                 style={{
-                  fontSize: '4.2rem',
                   fontWeight: 'bold',
                   color: '#211b1bde'
                 }}
                 noWrap={false}
                 gutterBottom={true}
               >
-                Lorem, ipsum dolor
+                CREATE. ENLIGHT.
               </Typography>
               <Typography
                 variant="h5"
@@ -35,10 +34,8 @@ class Main extends React.Component {
                 paragraph={true}
                 style={{ color: '#2b2b2bde', width: '90%' }}
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
-                totam doloremque veritatis, facere animi sapiente. Beatae,
-                aperiam. Aperiam aliquid qui repudiandae ducimus blanditiis
-                voluptas id alias earum, unde error impedit?
+                Turn already prepered Data into Actionable Insights or add your
+                own database
               </Typography>
               <Button
                 variant="contained"
@@ -46,7 +43,7 @@ class Main extends React.Component {
                 component={ExploreLink}
                 color="primary"
               >
-                Explore
+                Explore Now
               </Button>
             </div>
           </Grid>

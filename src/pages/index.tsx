@@ -1,9 +1,9 @@
 import * as React from 'react';
-import Loader from '../../common/Loading';
+import Loader from '../common/Loading';
 import { setTimeout } from 'timers';
-import Main from './Home';
+import Main from './home/Home';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Explore from '../explore';
+import Explore from './explore/Explore';
 
 interface IState {
   isLoading: boolean;
