@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import Home from './home';
+import Home from './pages';
 import { theme } from './styles/theme';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import './styles/global.css';

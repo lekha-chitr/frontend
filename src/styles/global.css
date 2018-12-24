@@ -17,11 +17,18 @@ body {
   min-height: 80vh;
   justify-items: flex-end;
 }
+.padding {
+  padding: 50px;
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .flex-column {
     flex-direction: column;
     text-align: center;
     align-items: center;
+  }
+  .padding {
+    padding: 0px;
+    padding-top: 40px;
   }
   .h-1 {
     min-height: 60vh;
@@ -36,4 +43,11 @@ body {
 }
 .main-heading-2 {
   font-size: 1.25rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.bigg {
+  height: 200vh;
 }
